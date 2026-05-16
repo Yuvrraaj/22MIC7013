@@ -12,6 +12,7 @@ Backend development assessment covering logging middleware, REST APIs, and syste
 ├── vehicle_maintence_scheduler/  # Vehicle maintenance REST API
 ├── notification_app_be/          # Notification system REST API
 ├── notification_system_design.md # System architecture document
+├── images/                       # API screenshots
 └── README.md
 ```
 
@@ -152,7 +153,7 @@ Request:
 }
 ```
 
-<!-- Add screenshot here: POST /vehicles (Toyota Innova) -->
+![POST /vehicles](images/postVehicles.png)
 
 ---
 
@@ -170,13 +171,13 @@ Request:
 }
 ```
 
-<!-- Add screenshot here: POST /vehicles (MG Hector) -->
+![POST /vehicles 2](images/postVehicles2.png)
 
 ---
 
 #### GET `/vehicles`
 
-<!-- Add screenshot here: GET /vehicles -->
+![GET /vehicles](images/getVehicles.png)
 
 ---
 
@@ -186,7 +187,7 @@ Request:
 GET /vehicles/cfd8081c-f32a-4fe0-b60d-64e8c65ae938
 ```
 
-<!-- Add screenshot here: GET /vehicles/:id -->
+![GET /vehicles/:id](images/getVehicles1.png)
 
 ---
 
@@ -204,7 +205,7 @@ Request:
 }
 ```
 
-<!-- Add screenshot here: PUT /vehicles/:id -->
+![PUT /vehicles/:id](images/putVehicles.png)
 
 ---
 
@@ -221,13 +222,13 @@ Request:
 }
 ```
 
-<!-- Add screenshot here: POST /maintenance -->
+![POST /maintenance](images/postMaintenance.png)
 
 ---
 
 #### GET `/maintenance`
 
-<!-- Add screenshot here: GET /maintenance -->
+![GET /maintenance](images/getMaintaince.png)
 
 ---
 
@@ -237,25 +238,7 @@ Request:
 GET /vehicles/cfd8081c-f32a-4fe0-b60d-64e8c65ae938/maintenance
 ```
 
-<!-- Add screenshot here: GET /vehicles/:id/maintenance -->
-
----
-
-#### PATCH `/maintenance/:id` — Change Status
-
-```
-PATCH /maintenance/4afe64a6-d2b6-4b73-aaed-98290211a5d5
-```
-
-Request:
-
-```json
-{
-  "status": "completed"
-}
-```
-
-<!-- Add screenshot here: PATCH /maintenance/:id -->
+![GET /vehicles/:id/maintenance](images/getOneMaintanince.png)
 
 ---
 
@@ -288,13 +271,13 @@ Request:
 }
 ```
 
-<!-- Add screenshot here: POST /users -->
+![POST /users](images/PostUser.png)
 
 ---
 
 #### GET `/users`
 
-<!-- Add screenshot here: GET /users -->
+![GET /users](images/getUsers.png)
 
 ---
 
@@ -312,13 +295,7 @@ Request:
 }
 ```
 
-<!-- Add screenshot here: POST /notifications -->
-
----
-
-#### GET `/notifications`
-
-<!-- Add screenshot here: GET /notifications -->
+![POST /notifications](images/postNotification.png)
 
 ---
 
@@ -328,7 +305,7 @@ Request:
 GET /notifications/92628e10-d098-481f-9273-a3d92b6611ad
 ```
 
-<!-- Add screenshot here: GET /notifications/:id -->
+![GET /notifications/:id](images/getNotification.png)
 
 ---
 
